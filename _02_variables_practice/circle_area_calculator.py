@@ -10,25 +10,26 @@ import math
 if __name__ == '__main__':
     window = Tk()
     window.withdraw()
-    
+
     # Ask the user for the radius in pixels and store it in a variable
-    # simpledialog.askinteger()
-    
-    # Make a new turtle
-    
-    # Have your turtle draw a circle with the correct radius
+    radius=simpledialog.askinteger(title='i hate titles',prompt='what is the radius?')
+    #Make a new
+    # turtle draw a circle with the correct radius
     # my_turtle.circle()
-
+    idiot=turtle.Turtle()
     # Call the turtle .penup() method
-
+    idiot.circle(radius=radius, extent=360,steps=10000)
     # Move your turtle to a new x,y position using .goto()
-
+    idiot.penup()
+    idiot.goto(0,0)
     # Calculate the area of your circle and store it in a variable
+    area=math.pi*radius*radius
     # Hint, you can use math.pi
     
     # Write the area of your circle using the turtle .write() method
     # my_turtle.write(arg="area = " + str(area), move=True, align='left', font=('Arial',8,'normal'))
-
+    idiot.write(arg="area =" + str(area), move=True, align='left', font=('Arial',8,'normal'))
     # Hide your turtle
-
-    # Call turtle.done()
+    idiot.hideturtle()
+    turtle.done()
+   # Call turtle.done()
