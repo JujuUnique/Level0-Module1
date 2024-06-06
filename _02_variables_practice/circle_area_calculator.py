@@ -32,4 +32,4 @@ if __name__ == '__main__':
     # Hide your turtle
     idiot.hideturtle()
     turtle.done()
-   # Call turtle.done()
+   # Call turtle.done() ok yeah
